@@ -8,35 +8,35 @@
         <div class="row">
             <div class="mb-3 col-md-6 col-xl-6 col-xxl-6 col-lg-6 col-sm-12">
                 <asp:Label Text="Student Name:" runat="server" CssClass="form-label fw-bold" />
-                <asp:RequiredFieldValidator runat="server" ErrorMessage="*" Display="Dynamic" ForeColor="Red" ControlToValidate="StudentName"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator  ValidationGroup="MyValidationGroup" runat="server" ErrorMessage="*" Display="Dynamic" ForeColor="Red" ControlToValidate="StudentName"></asp:RequiredFieldValidator>
                 <asp:TextBox ID="StudentName" runat="server" CssClass="form-control" ToolTip="Enter the Student Name" placeholder="Enter the Student Name" />
             </div>
             <div class="mb-3 col-md-6 col-xl-6 col-xxl-6 col-lg-6 col-sm-12">
                 <asp:Label Text="Student Father Name:" runat="server" CssClass="form-label fw-bold" />
-                <asp:RequiredFieldValidator runat="server" ErrorMessage="*" Display="Dynamic" ForeColor="Red" ControlToValidate="StudentFatherName"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator  ValidationGroup="MyValidationGroup" runat="server" ErrorMessage="*" Display="Dynamic" ForeColor="Red" ControlToValidate="StudentFatherName"></asp:RequiredFieldValidator>
                 <asp:TextBox ID="StudentFatherName" runat="server" CssClass="form-control" ToolTip="Enter the Student Father Name" placeholder="Enter the Student Father Name" />
             </div>
             <div class="mb-3 col-md-6 col-xl-6 col-xxl-6 col-lg-6 col-sm-12">
                 <asp:Label Text="Class:" runat="server" CssClass="form-label fw-bold" />
-                <asp:RequiredFieldValidator runat="server" ErrorMessage="*" Display="Dynamic" ForeColor="Red" ControlToValidate="ClassID"></asp:RequiredFieldValidator>
-                <asp:RangeValidator runat="server" ErrorMessage="Select a Class" Display="Dynamic" ForeColor="Red" ControlToValidate="ClassID" MinimumValue="1" MaximumValue="50" Type="Integer"></asp:RangeValidator>
+                <asp:RequiredFieldValidator  ValidationGroup="MyValidationGroup" runat="server" ErrorMessage="*" Display="Dynamic" ForeColor="Red" ControlToValidate="ClassID"></asp:RequiredFieldValidator>
+                <asp:RangeValidator  ValidationGroup="MyValidationGroup" runat="server" ErrorMessage="Select a Class" Display="Dynamic" ForeColor="Red" ControlToValidate="ClassID" MinimumValue="1" MaximumValue="50" Type="Integer"></asp:RangeValidator>
                 <asp:DropDownList runat="server" ID="ClassID" ToolTip="Select Class" AutoPostBack="true" CssClass="form-control" OnSelectedIndexChanged="ClassID_SelectedIndexChanged" />
             </div>
             <div class="mb-3 col-md-6 col-xl-6 col-xxl-6 col-lg-6 col-sm-12">
                 <asp:Label Text="Section:" runat="server" CssClass="form-label fw-bold" />
-                <asp:RequiredFieldValidator runat="server" ErrorMessage="*" Display="Dynamic" ForeColor="Red" ControlToValidate="SectionID"></asp:RequiredFieldValidator>
-                <asp:RangeValidator runat="server" ErrorMessage="Select a Section" Display="Dynamic" ForeColor="Red" ControlToValidate="SectionID" MinimumValue="1" MaximumValue="50" Type="Integer"></asp:RangeValidator>
+                <asp:RequiredFieldValidator  ValidationGroup="MyValidationGroup" runat="server" ErrorMessage="*" Display="Dynamic" ForeColor="Red" ControlToValidate="SectionID"></asp:RequiredFieldValidator>
+                <asp:RangeValidator  ValidationGroup="MyValidationGroup" runat="server" ErrorMessage="Select a Section" Display="Dynamic" ForeColor="Red" ControlToValidate="SectionID" MinimumValue="1" MaximumValue="50" Type="Integer"></asp:RangeValidator>
                 <asp:DropDownList runat="server" ID="SectionID" ToolTip="Select Section" CssClass="form-control" placeholder="Select Section" />
             </div>
             <div class="mb-3 col-md-6 col-xl-6 col-xxl-6 col-lg-6 col-sm-12">
                 <asp:Label Text="Student Admission Date:" runat="server" CssClass="form-label fw-bold" />
-                <asp:RequiredFieldValidator runat="server" ErrorMessage="*" Display="Dynamic" ForeColor="Red" ControlToValidate="AdmissionDate"></asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator  ValidationGroup="MyValidationGroup" runat="server" ErrorMessage="*" Display="Dynamic" ForeColor="Red" ControlToValidate="AdmissionDate"></asp:RequiredFieldValidator>
                 <asp:TextBox ID="AdmissionDate" runat="server" CssClass="datepicker form-control" ToolTip="Select the Student Admission Date" placeholder="Select the Student Admission Date" ReadOnly="true"></asp:TextBox>
             </div>
         </div>
         <div class="row mt-2">
             <div>
-                <asp:Button ID="btnSave" runat="server" Text="Save" CssClass="btn btn-success border-3 border-success px-5" OnClick="btnSave_Click" />
+                <asp:Button ID="btnSave" runat="server" ValidationGroup="MyValidationGroup" Text="Save" CssClass="btn btn-success border-3 border-success px-5" OnClick="btnSave_Click" />
                 <asp:Button ID="btnClear" runat="server" Text="Clear" CssClass="btn btn-light border-3 border-secondary px-5" OnClick="btnClear_Click" />
             </div>
         </div>

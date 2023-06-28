@@ -92,6 +92,7 @@ namespace WebApp
 
         private void EmptyAllFields()
         {
+            btnSave.Enabled = true;
             StudentName.Text = "";
             StudentFatherName.Text = "";
             AdmissionDate.Text = "";
@@ -125,6 +126,7 @@ namespace WebApp
             if (e.CommandName == "ShowDetails")
             {
                 int StudentID = Convert.ToInt32(e.CommandArgument);
+                btnSave.Enabled = false;
                 FillStudentDetailsInFields(StudentID);
             }
         }

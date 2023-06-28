@@ -13,6 +13,9 @@ namespace WebApp
             var settings = new FriendlyUrlSettings();
             settings.AutoRedirectMode = RedirectMode.Permanent;
             routes.EnableFriendlyUrls(settings);
+
+            // Add this line
+            routes.MapPageRoute("Default", "", "~/StudentManagement.aspx");
         }
     }
 }
