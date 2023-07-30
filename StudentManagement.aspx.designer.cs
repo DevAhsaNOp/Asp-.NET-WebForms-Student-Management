@@ -15,6 +15,24 @@ namespace WebApp
     {
 
         /// <summary>
+        /// panel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.UpdatePanel panel;
+
+        /// <summary>
+        /// StdID control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label StdID;
+
+        /// <summary>
         /// StudentName control.
         /// </summary>
         /// <remarks>
@@ -60,6 +78,15 @@ namespace WebApp
         protected global::System.Web.UI.WebControls.TextBox AdmissionDate;
 
         /// <summary>
+        /// btnAdd control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAdd;
+
+        /// <summary>
         /// btnSave control.
         /// </summary>
         /// <remarks>
@@ -69,13 +96,13 @@ namespace WebApp
         protected global::System.Web.UI.WebControls.Button btnSave;
 
         /// <summary>
-        /// btnClear control.
+        /// btnEdit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnClear;
+        protected global::System.Web.UI.WebControls.Button btnEdit;
 
         /// <summary>
         /// StudentGridView control.
